@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Hind', sans-serif;
 }
 body {
   background: black;
-  font-family: 'Hind', sans-serif;
 }
 #nav {
   color: white;
@@ -63,6 +63,15 @@ body {
   opacity: 0.8;
   cursor: pointer;
   color: tomato;
+}
+.image-text p:first-child {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.image-text p:last-child {
+  font-size: 1.5em;
+  border-bottom: 1px solid transparent;
+  margin-left: 15px;
 }
 .image-text:hover + .hidden-image-text{
   display: block;
@@ -123,15 +132,6 @@ body {
   margin-top: 10px;
   text-transform: uppercase;
 }
-.image-text p:first-child {
-  text-transform: uppercase;
-  font-size: .8em;
-}
-.image-text p:last-child {
-  font-size: 1.5em;
-  border-bottom: 1px solid transparent;
-  margin-left: 15px;
-}
 
 
 /* start of info-text*/
@@ -170,7 +170,7 @@ a {
   cursor: pointer;
   opacity: 1;
 }
-.project, .tickets {
+.project, .apply {
   padding: 30px 0px;
 }
 .project p:first-child {
@@ -178,6 +178,49 @@ a {
   text-transform: uppercase;
   font-size: .9em;
 }
-.tickets {
+.project {
   display: none;
+}
+/*.apply {
+  display: none;
+}*/
+/* form styling */
+form {
+  /*margin-left: 0 auto;
+  margin-right: 0 auto;*/
+  margin-top: 3%;
+
+}
+input, textarea{
+  background: rgba(89, 8, 8, 0);
+  height: 2em;
+  width: 50%;
+  margin-bottom: 2%;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  text-transform: uppercase;
+}
+textarea {
+  text-align: left;
+  max-width: 98%;
+  width: 98%;
+  height: 20%;
+}
+
+input:nth-child(1), input:nth-child(2) {
+  width: 48%;
+}
+input:nth-child(1) {
+  float: left;
+  margin-right: 2%;
+}
+input:nth-child(2) {
+  float: right;
+  margin-left: 2%;
+}
+::-webkit-input-placeholder {
+  color:tomato;
+  text-transform: uppercase;
+  text-align: center;
 }
