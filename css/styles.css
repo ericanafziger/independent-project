@@ -252,7 +252,8 @@ input:nth-child(even) {
   float: right;
 }
 ::-webkit-input-placeholder {
-  color: white;
+  color: tomato;
+  opacity: 0.8;
   text-transform: uppercase;
   text-align: center;
   padding-top: 20px;
@@ -313,12 +314,11 @@ input:nth-child(even) {
     transform: translate(-50%,0);
   }
   #nav ul {
-  margin: 0 auto;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,0);
   }
   #nav li {
-    display: inline;
-    margin-left: 0%;
-    margin-right: 0%;
     margin: 3%;
     opacity: 0.4;
   }
@@ -366,11 +366,24 @@ input:nth-child(even) {
     transform: translate(-50%,0);
     text-transform: uppercase;
   }
+  input, textarea, button{
+    height: 2.2em;
+    font-size: .8em;
+    }
+  ::-webkit-input-placeholder {
+    padding-top: 4px;
+  }
 }
 @media (max-width: 420px) {
   .small-image-text {
     font-size: 1.2em;
     margin-top: 0;
   }
-
+  input, textarea, button{
+    height: 2.2em;
+    font-size: .6em;
+    }
+  ::-webkit-input-placeholder {
+    padding-top: 4px;
+  }
 }
