@@ -279,8 +279,8 @@ input:nth-child(even) {
   float: center;
   opacity: 0.5;
   transition: all ease-in-out 1000ms;
-  width: 15%;
-  height: 15%;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 #photos .active {
@@ -291,7 +291,7 @@ input:nth-child(even) {
   opacity: 1;
 }
 #display img {
-  width: 76%;
+  width: 1015px;
   height: 55%;
   object-fit: cover;
 }
@@ -299,13 +299,12 @@ input:nth-child(even) {
   position: relative;
   color: #333;
   text-align: center;
-  padding: 1%;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding: 10px;
   overflow: none;
-  left: 12%;
+  left: 50%;
+  transform: translate(-50%,0);
   background: rgba(255, 255, 255, 0.5);
-  width: 76%;
+  width: 1015px;
   height: 3em;
 }
 @media (max-width: 1350px) {
@@ -334,8 +333,29 @@ input:nth-child(even) {
     left: 50%;
     transform: translate(-50%,0);
   }
+  #photos img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  #display img {
+    width: 765px;
+    height: 45%;
+    object-fit: cover;
+  }
+  #caption {
+    width: 765px;
+    transition: all ease-in-out 1000ms;
+  }
 }
 @media (max-width: 1000px) {
+  #image {
+    margin-top: 10%;
+  }
+  #info-text {
+    top: 400px;
+  }
+
   .image-text p:last-child {
     font-size: 1em;
     margin-left: 20px;
@@ -352,14 +372,47 @@ input:nth-child(even) {
     margin-top: 0px;
   }
 }
+@media (max-width: 790px) {
+  #photos img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  #display img {
+    width: 515px;
+    height: 35%;
+    object-fit: cover;
+  }
+  #caption {
+    width: 515px;
+  }
+}
+@media (max-width: 520px) {
+  #photos img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+  #display img {
+    width: 365px;
+    height: 25%;
+    object-fit: cover;
+  }
+  #caption {
+    width: 365px;
+  }
+}
 @media (max-width: 680px) {
   .image-text {
     display: none;
   }
+  #info-text {
+    top: 100%;
+  }
   .small-image-text {
     display: block;
     font-family: 'Hind', sans-serif;
-    top: 35%;
+    top: 25%;
     font-size: 1.3em;
     text-align: center;
     left: 50%;
@@ -373,10 +426,14 @@ input:nth-child(even) {
   ::-webkit-input-placeholder {
     padding-top: 4px;
   }
+  .header li {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .small-image-text {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-top: 0;
   }
   input, textarea, button{
@@ -385,5 +442,23 @@ input:nth-child(even) {
     }
   ::-webkit-input-placeholder {
     padding-top: 4px;
+  }
+  .header li {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #photos img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  #display img {
+    width: 265px;
+    height: 15%;
+    object-fit: cover;
+  }
+  #caption {
+    width: 265px;
+    font-size: 0.8em;
   }
 }
