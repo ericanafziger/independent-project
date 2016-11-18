@@ -1,13 +1,16 @@
 $(document).ready(function(){
+  $("#wrapper").fadeIn(3000);
+  $("#image img").fadeIn(4000);
+  $("#image .hidden-image-text").show();
   $("#apply").click(function(){
-    $(".apply").delay(500).fadeIn(2000);
-    $(".project").fadeOut();
+    $(".apply").delay(300).fadeIn(2000);
+    $(".project").hide();
     $(".header li").removeClass("active");
     $(".header li:last").addClass("active");
   });
   $("#project").click(function(){
-    $(".apply").fadeOut();
-    $(".project").delay(500).fadeIn(2000);
+    $(".apply").hide();
+    $(".project").delay(300).fadeIn(2000);
     $(".header li").removeClass("active");
     $(".header li:first").addClass("active");
   });
