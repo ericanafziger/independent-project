@@ -159,17 +159,18 @@ a {
   margin-left: 15%;
   margin-right: 15%;
   font-size: .8em;
+  opacity: 0.4;
+  transition: all ease-in-out 700ms;
   text-transform: uppercase;
 }
-.header li:last-child {
-  opacity: 0.4;
-  transition: all ease-in 2000ms;
+.header .active {
+  opacity: 1;
 }
-.header li:last-child:hover {
+.header li:hover {
   cursor: pointer;
   opacity: 1;
 }
-.project {
+.project, .tickets {
   padding: 30px 0px;
 }
 .project p:first-child {
