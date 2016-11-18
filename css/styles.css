@@ -45,26 +45,31 @@ body {
   max-width: 100%;
   position: relative;
   margin-top: 15%;
-  right:5%;
+  right:10%;
 }
 #image img {
-  width: 90%;
+  width: 100%;
   opacity: 0.7;
   display: none;
   height: 90%;
   object-fit: cover;
 }
+.small-image-text {
+  display: none;
+  position: absolute;
+  bottom: 80%;
+  color: white;
+}
 .image-text {
   position: absolute;
   bottom: 80%;
-  left: 64%;
+  left: 72%;
   color: white;
   transition: all ease-in 2000ms;
 }
 .image-text:hover {
   opacity: 0.5;
   cursor: pointer;
-  /*color: tomato;*/
 }
 .image-text p:first-child {
   text-transform: uppercase;
@@ -73,7 +78,7 @@ body {
 .image-text p:last-child {
   font-size: 1.5em;
   border-bottom: 1px solid transparent;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 .image-text:hover + .hidden-image-text{
   display: block;
@@ -83,8 +88,8 @@ body {
   position: absolute;
   display: none;
   font-family: 'Hind', sans-serif;
-  bottom: 43%;
-  left: 69%;
+  top: 23%;
+  left: 80%;
   font-size: 1.3em;
   color: white;
   opacity: 0;
@@ -129,7 +134,7 @@ body {
   margin-left: 15px;
 }
 .hidden-image-text p:last-child {
-  transition: all ease-in 4000ms;
+  transition: all ease-in 2000ms;
   opacity: 0;
   font-size: 1.5em;
   margin-left: 20px;
@@ -187,7 +192,7 @@ a {
   text-transform: uppercase;
   font-size: .9em;
 }
-.project p:nth-child(3):first-letter { float: left; font-size: 50px; line-height: 45px; padding-top: 6px; padding-right: 8px; padding-left: 3px
+.project p:nth-child(3)::first-letter { float: left; font-size: 50px; line-height: 45px; padding-top: 6px; padding-right: 8px; padding-left: 3px
 }
 
 .apply {
@@ -252,6 +257,8 @@ input:nth-child(even) {
   text-align: center;
   padding-top: 20px;
 }
+
+
 /* photos page styling */
 #photos-wrapper {
   position: relative;
@@ -286,4 +293,84 @@ input:nth-child(even) {
   width: 76%;
   height: 55%;
   object-fit: cover;
+}
+#caption {
+  position: relative;
+  color: #333;
+  text-align: center;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  overflow: none;
+  left: 12%;
+  background: rgba(255, 255, 255, 0.5);
+  width: 76%;
+  height: 3em;
+}
+@media (max-width: 1350px) {
+  #wrapper {
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  #nav ul {
+  margin: 0 auto;
+  }
+  #nav li {
+    display: inline;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin: 3%;
+    opacity: 0.4;
+  }
+  #image {
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 70%;
+  }
+  #info-text {
+    height: 800px;
+    width: 70%;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+}
+@media (max-width: 1000px) {
+  .image-text p:last-child {
+    font-size: 1em;
+    margin-left: 20px;
+  }
+  .image-text p:first-child {
+    display: block;
+    font-size: .8em;
+  }
+  .hidden-image-text {
+    font-size: 1em;
+  }
+  .hidden-image-text p:last-child {
+    font-size: 1.1em;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 680px) {
+  .image-text {
+    display: none;
+  }
+  .small-image-text {
+    display: block;
+    font-family: 'Hind', sans-serif;
+    top: 35%;
+    font-size: 1.3em;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 420px) {
+  .small-image-text {
+    font-size: 1.2em;
+    margin-top: 0;
+  }
+
 }
