@@ -56,15 +56,71 @@ body {
   bottom: 80%;
   left: 64%;
   color: white;
-  transition: all ease-in-out 2000ms;
+  transition: all ease-in 2000ms;
 }
 .image-text:hover {
   opacity: 0.5;
   cursor: pointer;
   color: tomato;
 }
+.image-text:hover + .hidden-image-text{
+  display: block;
+  opacity: 1;
+}
 .hidden-image-text {
-  display: none;
+  position: absolute;
+  bottom: 46%;
+  left: 69%;
+  font-size: 1.3em;
+  color: white;
+  opacity: 0;
+  transition: all ease-in 1000ms;
+}
+.image-text:hover + .hidden-image-text p:last-child {
+  -webkit-transition-delay: 3.2s;
+  -moz-transition-delay: 3.2s;
+  -o-transition-delay: 3.2s;
+  transition-delay: 3.2s;
+  opacity: 1;
+}
+.image-text:hover + .hidden-image-text p:first-child {
+  opacity: 1;
+}
+.image-text:hover + .hidden-image-text p:nth-child(2) {
+  -webkit-transition-delay: 1000ms;
+  -moz-transition-delay: 1000ms;
+  -o-transition-delay: 1000ms;
+  transition-delay: 1000ms;
+  opacity: 1;
+}
+.image-text:hover + .hidden-image-text p:nth-child(3) {
+  -webkit-transition-delay: 2000ms;
+  -moz-transition-delay: 2000ms;
+  -o-transition-delay: 2000ms;
+  transition-delay: 2000ms;
+  opacity: 1;
+}
+.hidden-image-text p:first-child {
+  transition: all ease-in 2000ms;
+  opacity: 0;
+}
+.hidden-image-text p:nth-child(2) {
+  transition: all ease-in 2000ms;
+  opacity: 0;
+  margin-left: 10px;
+}
+.hidden-image-text p:nth-child(3) {
+  transition: all ease-in 2000ms;
+  opacity: 0;
+  margin-left: 15px;
+}
+.hidden-image-text p:last-child {
+  transition: all ease-in 4000ms;
+  opacity: 0;
+  font-size: 1.5em;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
 }
 .image-text p:first-child {
   text-transform: uppercase;
@@ -72,4 +128,6 @@ body {
 }
 .image-text p:last-child {
   font-size: 1.5em;
+  border-bottom: 1px solid transparent;
+  margin-left: 15px;
 }
