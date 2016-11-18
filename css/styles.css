@@ -244,3 +244,29 @@ input:nth-child(even) {
   text-align: center;
   padding-top: 20px;
 }
+/* photos page styling */
+#photos-wrapper {
+  position: relative;
+  width: 100%;
+}
+#photos {
+  position: absolute;
+  max-width: 100%;
+  width: 90%;
+  margin-top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+#photos img {
+  display: inline;
+  opacity: 0.7;
+  transition: all ease-in-out 1000ms;
+  width: 15%;
+  height: 15%;
+  object-fit: cover;
+}
+#photos img:hover {
+  cursor: pointer;
+  opacity: 1;
+}
