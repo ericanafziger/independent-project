@@ -11,4 +11,29 @@ $(document).ready(function(){
     $(".header li").removeClass("active");
     $(".header li:first").addClass("active");
   });
+  $("#photos .surface").click(function(){
+    $("#photos img").removeClass("active");
+    $(this).addClass("active");
+    $("#display").html('<img class="active" src="img/surface.jpg" alt="surface of             mars">');
+  });
+  $("#photos .homes").click(function(){
+    $("#photos img").removeClass("active");
+    $(this).addClass("active");
+    $("#display").html('<img class="active" src="img/homes.jpg" alt="homes of             mars">');
+  });
+  $("#photos .astronaut").click(function(){
+    $("#photos img").removeClass("active");
+    $(this).addClass("active");
+    $("#display").html('<img class="active" src="img/astronaut.jpg" alt="astronaut of             mars">');
+  });
+  $("#photos .sunrise").click(function(){
+    $("#photos img").removeClass("active");
+    $(this).addClass("active");
+    $("#display").html('<img class="active" src="img/sunrise.jpg" alt="sunrise of             mars">');
+  });
+  $("#photos .transit").click(function(){
+    $("#photos img").removeClass("active");
+    $(this).addClass("active");
+    $("#display").html('<img class="active" src="img/transit.jpg" alt="transit of             mars">');
+  });
 });

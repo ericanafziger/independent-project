@@ -268,7 +268,7 @@ input:nth-child(even) {
   height: 15%;
   object-fit: cover;
 }
-#photos img:first-child {
+#photos .active {
   opacity: 1;
 }
 #photos img:hover {
