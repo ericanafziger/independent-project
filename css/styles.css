@@ -252,7 +252,7 @@ input:nth-child(even) {
 #photos {
   position: absolute;
   max-width: 100%;
-  width: 90%;
+  width: 100%;
   margin-top: 10%;
   left: 50%;
   transform: translate(-50%, 0);
@@ -269,4 +269,9 @@ input:nth-child(even) {
 #photos img:hover {
   cursor: pointer;
   opacity: 1;
+}
+#display img {
+  width: 76%;
+  height: 60%;
+  object-fit: cover;
 }
