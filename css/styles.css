@@ -215,7 +215,7 @@ input, textarea, button{
   outline: none;
   color: white;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 400;
   margin: 2%;
   border: 1px solid white;
   text-align: center;
@@ -255,7 +255,6 @@ input:nth-child(even) {
   float: right;
 }
 ::-webkit-input-placeholder {
-  color: tomato;
   opacity: 0.8;
   text-transform: uppercase;
   text-align: center;
@@ -281,7 +280,7 @@ input:nth-child(even) {
 #photos img {
   float: center;
   opacity: 0.5;
-  transition: all ease-in-out 1000ms;
+  transition: all ease-in-out 400ms;
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -305,6 +304,7 @@ input:nth-child(even) {
   padding: 10px;
   overflow: none;
   left: 50%;
+  transition: all ease-in-out 400ms;
   transform: translate(-50%,0);
   background: rgba(255, 255, 255, 0.5);
   width: 1015px;
@@ -348,7 +348,6 @@ input:nth-child(even) {
   }
   #caption {
     width: 765px;
-    transition: all ease-in-out 1000ms;
   }
 }
 @media (max-width: 1000px) {
