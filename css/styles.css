@@ -294,7 +294,7 @@ input:nth-child(even) {
 }
 #display img {
   width: 1015px;
-  height: 55%;
+  height: 500px;
   object-fit: cover;
 }
 #caption {
@@ -343,7 +343,7 @@ input:nth-child(even) {
   }
   #display img {
     width: 765px;
-    height: 45%;
+    height: 500px;
     object-fit: cover;
   }
   #caption {
@@ -357,7 +357,6 @@ input:nth-child(even) {
   #info-text {
     top: 400px;
   }
-
   .image-text p:last-child {
     font-size: 1em;
     margin-left: 20px;
@@ -382,7 +381,7 @@ input:nth-child(even) {
   }
   #display img {
     width: 515px;
-    height: 35%;
+    height: 400px;
     object-fit: cover;
   }
   #caption {
@@ -397,7 +396,7 @@ input:nth-child(even) {
   }
   #display img {
     width: 365px;
-    height: 25%;
+    height: 200px;
     object-fit: cover;
   }
   #caption {
@@ -456,7 +455,7 @@ input:nth-child(even) {
   }
   #display img {
     width: 265px;
-    height: 15%;
+    height: 160px;
     object-fit: cover;
   }
   #caption {
